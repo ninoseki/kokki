@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://ipinfo.io/1.0.16.0/geo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Mar 2019 12:22:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Via:
+      - 1.1 google
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "ip": "1.0.16.0",
+          "city": "",
+          "region": "",
+          "country": "JP",
+          "loc": "35.6900,139.6900"
+        }
+    http_version: 
+  recorded_at: Mon, 18 Mar 2019 12:22:52 GMT
+recorded_with: VCR 4.0.0
