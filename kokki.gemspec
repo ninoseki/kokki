@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Manabu Niseki"]
   spec.email         = ["manabu.niseki@gmail.com"]
 
-  spec.summary       = "Convert a country name / code & IP adddress to an emoji flag"
-  spec.description   = "Convert a country name / code & IP adddress to an emoji flag"
+  spec.summary       = "Convert a country name / code & IP address to an emoji flag"
+  spec.description   = "Convert a country name / code & IP address to an emoji flag"
   spec.homepage      = "https://github.com/ninoseki/kokki"
   spec.license       = "MIT"
 
