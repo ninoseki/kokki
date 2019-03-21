@@ -4,14 +4,6 @@
 require "bundler/setup"
 require "kokki"
 
-input = ARGV.first
+input = ARGV.first || gets
 
-if input
-  begin
-    puts Kokki.flagize(input)
-  rescue Kokki::InvalidInputError => e
-    puts e.message
-  end
-else
-  puts "Input not found: plase give a word to convert."
-end
+Kokki::CLI.start input

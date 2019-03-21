@@ -7,6 +7,8 @@ require "kokki/dictionary"
 require "kokki/ip_address"
 require "kokki/converter"
 
+require "kokki/cli"
+
 module Kokki
   def self.flagize(input)
     Converter.convert input
