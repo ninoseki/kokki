@@ -32,3 +32,12 @@ rescue Kokki::InvalidInputError => e
   # => invalid input: test
 end
 ```
+
+### CLI
+
+```bash
+$ kokki TW
+🇹🇼
+$ kokki japan
+🇯🇵
+```
