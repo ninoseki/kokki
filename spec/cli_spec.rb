@@ -6,7 +6,7 @@ RSpec.describe Kokki::CLI, :vcr do
   describe ".start" do
     context "when given a valid input" do
       it "should return a country flag of a given country" do
-        output = capture(:stdout) { subject.start "JP" }.chomp
+        output = capture(:stdout) { subject.start "JP" }
         expect(output).to eq("🇯🇵")
       end
     end

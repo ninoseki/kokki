@@ -5,7 +5,7 @@ module Kokki
     def self.start(input)
       if input
         begin
-          puts Kokki.flagize(input.chomp)
+          print Kokki.flagize(input.chomp)
         rescue Kokki::InvalidInputError => e
           puts e.message
         end
