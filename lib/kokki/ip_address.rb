@@ -16,7 +16,7 @@ module Kokki
     def country_code
       @country_code ||=
         [].tap do |out|
-          out << Geocoder.search(address)&.first&.country
+          out << Geocoder.search(address)&.first&.country_code&.upcase
         rescue Geocoder::Error => _
           out << nil
         end.first
