@@ -25,7 +25,7 @@ module Kokki
       flag ||= dict.lookup_by_name(upcase)
       flag ||= convert_as_ip_address(input)
 
-      raise InvalidInputError, "invalid input: #{input}" unless flag
+      raise InvalidInputError, "Invalid input given: #{input}" unless flag
 
       flag
     end
