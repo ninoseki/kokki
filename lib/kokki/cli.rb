@@ -10,7 +10,7 @@ module Kokki
           puts e.message
         end
       else
-        puts "Input not found: plase give a word to convert."
+        puts "Input not found: please give a word to convert."
       end
     end
   end
