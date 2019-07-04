@@ -15,8 +15,13 @@ module Kokki
     def convert
       flag = nil
 
-      flag = dict.lookup_by_alpha_2_code(upcase) if input.length == 2
-      flag = dict.lookup_by_alpha_3_code(upcase) if input.length == 3
+      case input.length
+      when 2
+        flag = dict.lookup_by_alpha_2_code(upcase)
+      when 3
+        flag = dict.lookup_by_alpha_3_code(upcase)
+      end
+
       flag ||= dict.lookup_by_name(upcase)
       flag ||= convert_as_ip_address(input)
 

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe Kokki do
-  subject { Kokki }
+  subject { described_class }
 
   it "has a version number" do
     expect(Kokki::VERSION).not_to be nil
@@ -12,8 +12,8 @@ RSpec.describe Kokki do
       allow(Kokki::Converter).to receive(:convert)
     end
 
-    it "should call Converter.convert" do
-      Kokki.flagize "US"
+    it "calls Converter.convert" do
+      described_class.flagize "US"
 
       expect(Kokki::Converter).to have_received(:convert).once
     end

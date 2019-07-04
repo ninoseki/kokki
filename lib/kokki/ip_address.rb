@@ -17,7 +17,7 @@ module Kokki
       @country_code ||=
         [].tap do |out|
           out << Geocoder.search(address)&.first&.country_code&.upcase
-        rescue Geocoder::Error => _
+        rescue Geocoder::Error => _e
           out << nil
         end.first
     end
@@ -27,7 +27,7 @@ module Kokki
     def ip_address?(address)
       IPAddr.new(address)
       true
-    rescue IPAddr::InvalidAddressError => _
+    rescue IPAddr::InvalidAddressError => _e
       false
     end
   end
