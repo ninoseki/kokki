@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe Kokki::Converter, :vcr do
-  subject { Kokki::Converter }
+  subject { described_class }
 
   describe ".convert" do
     context "when given an alpha-2-code" do

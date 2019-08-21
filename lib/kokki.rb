@@ -3,6 +3,8 @@
 require "kokki/version"
 require "kokki/errors"
 
+require "kokki/ipinfo"
+
 require "kokki/dictionary"
 require "kokki/ip_address"
 require "kokki/converter"
