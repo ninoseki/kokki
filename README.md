@@ -26,6 +26,11 @@ $ kokki japan
 🇯🇵
 $ kokki 202.214.194.147
 🇯🇵
+# it suports a defanged ip as an input
+$ kokki 1.1.1[.]1
+🇦🇺
+$ kokki "1.1.1(.)1"
+🇦🇺
 ```
 
 ### As a library
