@@ -36,8 +36,12 @@ module Kokki
 
     private
 
+    def refang(input)
+      input.gsub("[.]", ".").gsub("(.)", ".")
+    end
+
     def convert_as_ip_address(ip_address)
-      ip = IPAddress.new(ip_address)
+      ip = IPAddress.new(refang(ip_address))
       dict.lookup_by_alpha_2_code ip.country_code
     end
   end

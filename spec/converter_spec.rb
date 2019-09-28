@@ -41,6 +41,13 @@ RSpec.describe Kokki::Converter, :vcr do
       end
     end
 
+    context "when given a defanged ip address" do
+      it do
+        flag = subject.convert("1[.]0[.]16[.]0")
+        expect(flag).to eq("🇯🇵")
+      end
+    end
+
     context "when given an invalid input" do
       it "raises an InvalidError" do
         expect { subject.convert("test") }.to raise_error(Kokki::InvalidInputError)
