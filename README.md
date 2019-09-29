@@ -11,6 +11,8 @@ A Ruby gem for converting a country name / code & IP address to an emoji flag.
 
 ```bash
 gem install kokki
+# or
+docker pull ninoseki/kokki
 ```
 
 ## Usage
@@ -31,6 +33,10 @@ $ kokki 1.1.1[.]1
 🇦🇺
 $ kokki "1.1.1(.)1"
 🇦🇺
+
+# or
+$ docker run --rm ninoseki/kokki Japan
+🇯🇵
 ```
 
 ### As a library
