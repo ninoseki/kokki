@@ -1,7 +1,7 @@
 # kokki
 
 [![Gem Version](https://badge.fury.io/rb/kokki.svg)](https://badge.fury.io/rb/kokki)
-[![Build Status](https://travis-ci.org/ninoseki/kokki.svg?branch=master)](https://travis-ci.org/ninoseki/kokki)
+[![Build Status](https://travis-ci.com/ninoseki/kokki.svg?branch=master)](https://travis-ci.com/ninoseki/kokki)
 [![Coverage Status](https://coveralls.io/repos/github/ninoseki/kokki/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/kokki?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/ninoseki/kokki/badge)](https://www.codefactor.io/repository/github/ninoseki/kokki)
 
